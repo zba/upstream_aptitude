@@ -6,7 +6,7 @@ my $a=1;
 my $out;
 while ($a==1) {
 $out='';
-print "will remove last $num dot and search by '$spatt'\n";
+print STDERR "will remove last $num dot and search by '$spatt'\n";
 open( apti, "aptitude -w 3000 -F '%p %50v %50V' search '$spatt'|" );
 while (<apti>) {
 my ($p,$old_real,$new_real)=split(/\s+/,$_);

@@ -33,5 +33,5 @@ $num--;
 if ($num<0) {$a=0;$num=0}
 }
 
-while (scalar(split(/\n/,$out))==0) {$num++;$out=$outs[$num]}
+while (scalar(split(/\n/,$out))==0) {$num++;$out=$outs[$num];if ($num>100) {print STDERR "sorry, no packages to upgrade \n";exit;} }
 print $out;
