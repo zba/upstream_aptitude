@@ -1,0 +1,22 @@
+upstream_apt.pl - search backwards (removes dots from tail ) 
+example: 
+ installed version: 3.3.1.3.4
+ repository version: 3.3.2.2.3
+ remove 3
+i   r
+3.3 3.3, so hide that package from output
+
+
+upstream_apt2.pl - search forward  (leaves heads before dots ) 
+example: 
+ installed version: 3.3.1.3.4
+ repository version: 3.3.2.2.3
+ leave 3
+i       r
+3.3.1   3.3.2, so show package in output
+
+you can thank me using bitcoins:
+
+14xFFC6oKk86WzC5igRNMmD9R5XZim4JHw
+
+
