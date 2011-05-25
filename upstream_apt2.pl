@@ -3,7 +3,7 @@ use strict;
 my @outs;
 my $num   = ( @ARGV[0] or 3 );
 $num--;
-my $spatt = ( @ARGV[1] or '!~M ~U' );
+my $spatt = ( @ARGV[1] or '!~M ~U ~aupgrade' );
 my $a=1;
 my $out;
 while ($a==1) {
